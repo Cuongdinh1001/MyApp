@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/imageviewlogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- USERNAME -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-50dp"
+            android:src="@drawable/username">
+        </ImageView>
+        <EditText
+            android:id="@+id/edittextusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#11000000"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!-- PASSWORD -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-50dp"
+            android:src="@drawable/password">
+        </ImageView>
+        <EditText
+            android:id="@+id/edittextpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="#11000000"
+            android:gravity="center"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <!-- FORGOT PASSWORD -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/forgotpassword"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="Forgot password"/>
+    </LinearLayout>
+
+    <!-- BUTTON LOGIN -->
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Sign up" />
+
+</LinearLayout>
